@@ -1,0 +1,10 @@
+CREATE DATABASE authserver;
+USE authserver;
+
+CREATE TABLE user(
+	id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL UNIQUE, 
+    password VARCHAR(100) NOT NULL,
+    role VARCHAR(5) NOT NULL
+);

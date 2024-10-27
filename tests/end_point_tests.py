@@ -6,7 +6,8 @@ class EndPointTests(unittest.TestCase):
         admin = {
             'user_id': '1',
             'username': 'admin',
-            'email': 'admin@admin.com'
+            'email': 'admin@admin.com',
+            'role': 'ADMIN'
         }
         self.assertEqual(await uc.get_user(1), admin)
 

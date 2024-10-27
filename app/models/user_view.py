@@ -8,5 +8,6 @@ class UserView:
         return {
             'user_id': str(self._user.get_id()),
             'username': self._user.get_username(),
-            'email': self._user.get_email()
+            'email': self._user.get_email(),
+            'role': self._user.get_role()
         }

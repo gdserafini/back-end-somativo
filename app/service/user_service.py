@@ -6,8 +6,9 @@ async def get_user_by_id(user_id: int) -> User | None:
     user_data = await ur.get_user_by_id(user_id)
     if user_data is None: return None
     return User(
-        user_data['user_id'],
-        user_data['username'],
-        user_data['password'],
-        user_data['email']
+        user_id=user_data[0],
+        username=user_data[1],
+        email=user_data[2],
+        password=user_data[3],
+        role=user_data[4]
     )
