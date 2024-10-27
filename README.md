@@ -8,7 +8,9 @@
 * Python >= 3.11
 * Pip/Conda
 * FastAPI
+* mysql-connector-pyhton
 
 ### Comandos: 
+pip install -r requirements.txt
 cd app <br>
 fastapi dev main.py
